@@ -1,0 +1,23 @@
+<!-- Page Banner [[ Find at scss/base/core.scss ]] -->
+<div class="banner bg-home"></div>
+
+<!-- Begin | Main Container [[ Find at scss/base/core.scss ]] -->
+<div class="main-container">
+  <!-- Top Charts -->
+  <app-section
+    *ngIf="topCharts"
+    [section]="topCharts"
+    [carouselButtonPositionClass]="carouselArrowPosClass3"
+    [primaryCard]="true"
+    [showImageOptions]="true"
+  >
+  </app-section>
+
+  <h4 class="mb-4">Featured</h4>
+  <ngx-slick-carousel class="{{ classes }} section" [config]="sliderConfig">
+    <div ngxSlickItem class="slide" *ngFor="let event of events">
+      <app-event-countdown-card [musicEvent]="event"></app-event-countdown-card>
+    </div>
+  </ngx-slick-carousel>
+</div>
+<!-- End | Main Container -->
