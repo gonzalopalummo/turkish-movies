@@ -1,42 +1,47 @@
 export class MenuConfig {
-  public config: any = {};
+  public config: any = {}
 
   constructor() {
     this.config = {
       aside: {
         items: [
-          { section: "Browse Movies" },
+          { section: 'Browse Movies' },
           {
-            title: "Home",
-            icon: "la la-home",
-            page: "/home"
+            title: 'Home',
+            icon: 'la la-home',
+            page: '/home',
           },
           {
-            title: "Genres",
-            icon: "la la-diamond",
-            page: "/genres"
-          }
-        ]
+            title: 'Profile',
+            icon: 'ion-md-contact',
+            page: '/profile',
+          },
+          {
+            title: 'Settings',
+            icon: 'ion-md-settings',
+            page: '/settings',
+          },
+        ],
       },
       userMenu: {
         items: [
           {
-            title: "Profile",
-            icon: "ion-md-contact",
-            page: "/profile"
+            title: 'Profile',
+            icon: 'ion-md-contact',
+            page: '/profile',
           },
           {
-            title: "Your Plan",
-            icon: "ion-md-radio-button-off",
-            page: "/plan"
+            title: 'Your Plan',
+            icon: 'ion-md-radio-button-off',
+            page: '/plan',
           },
           {
-            title: "Settings",
-            icon: "ion-md-settings",
-            page: "/settings"
-          }
-        ]
-      }
-    };
+            title: 'Settings',
+            icon: 'ion-md-settings',
+            page: '/settings',
+          },
+        ],
+      },
+    }
   }
 }
