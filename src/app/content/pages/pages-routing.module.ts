@@ -1,13 +1,18 @@
-import { NgModule } from '@angular/core'
-import { Routes, RouterModule } from '@angular/router'
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-import { DemoPageComponent } from './snippets/demo-page/demo-page.component'
-import { LandingPageComponent } from './snippets/landing-page/landing-page.component'
-import { ErrorPageComponent } from './snippets/error-page/error-page.component'
-import { PagesComponent } from './pages.component'
-import { HomeComponent } from './components/home/home.component'
+import { DemoPageComponent } from './snippets/demo-page/demo-page.component';
+import { LandingPageComponent } from './snippets/landing-page/landing-page.component';
+import { ErrorPageComponent } from './snippets/error-page/error-page.component';
+import { PagesComponent } from './pages.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
+  {
+    path: 'landing',
+    component: LandingPageComponent,
+  },
   {
     path: '',
     component: PagesComponent,
@@ -18,11 +23,7 @@ const routes: Routes = [
       },
     ],
   },
-  {
-    path: 'landing',
-    component: LandingPageComponent,
-  },
-]
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

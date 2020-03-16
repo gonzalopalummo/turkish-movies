@@ -1,0 +1,63 @@
+<div class="container-fluid">
+  <div class="w-40 mx-auto my-5 py-5">
+    <h6 class="modal-title text-center mb-4">Sign Up</h6>
+
+    <form [formGroup]="form" class="mx-4 pb-5" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <app-input
+          placeholder="First Name"
+          name="firstName"
+          [abstractControl]="form.controls['firstName']"
+          class="col-md-6"
+        ></app-input>
+        <app-input
+          placeholder="Last Name"
+          name="lastName"
+          [abstractControl]="form.controls['lastName']"
+          class="col-md-6"
+        ></app-input>
+      </div>
+      <div class="row">
+        <app-input
+          placeholder="Email"
+          name="email"
+          [abstractControl]="form.controls['email']"
+          class="col-md-12"
+          type="email"
+        ></app-input>
+      </div>
+      <div class="row">
+        <app-input
+          type="password"
+          placeholder="Password"
+          name="password"
+          [abstractControl]="form.controls['password']"
+          class="col-md-6"
+        ></app-input>
+
+        <app-input
+          type="password"
+          placeholder="Repeat Password"
+          name="repeatPassword"
+          [abstractControl]="form.controls['repeatPassword']"
+          class="col-md-6"
+        ></app-input>
+      </div>
+
+      <button
+        type="submit"
+        class="btn btn-block btn-bold btn-air btn-info load-page mt-4"
+        [disabled]="!form.valid"
+      >
+        Register
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary btn-block btn-bold btn-air btn-info load-page mt-3"
+        routerLink="/login"
+      >
+        Go to Login
+      </button>
+    </form>
+  </div>
+</div>

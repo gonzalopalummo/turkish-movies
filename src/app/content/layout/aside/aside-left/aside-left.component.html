@@ -31,12 +31,12 @@
   <div class="sidebar-footer" *ngIf="asideFooterButton">
     <button
       type="button"
-      routerLink="/add-music"
-      class="btn btn-block btn-danger btn-air btn-bold"
+      routerLink="/login"
+      class="btn btn-block btn-secondary btn-air btn-bold"
       (click)="hideSidebar()"
     >
       <i [class]="asideFooterButton.icon"></i>
-      <span>{{ asideFooterButton.title }}</span>
+      <span> {{ asideFooterButton.title }}</span>
     </button>
   </div>
   <!-- End | Sidebar Footer -->

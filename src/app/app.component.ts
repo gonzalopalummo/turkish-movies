@@ -2,16 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { LoadingService } from './core/services/loading.service';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html'
+  selector: 'app-root',
+  templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit {
-    title = 'Turkish Movies';
+  title = 'Turkish Movies';
 
-    constructor(private loadingService: LoadingService) {
-        this.loadingService.startLoading();
-    }
+  constructor(private loadingService: LoadingService) {
+    this.loadingService.startLoading();
+    this.loadingService.stopLoading();
+  }
 
-    ngOnInit() {
-    }
+  ngOnInit() {}
 }

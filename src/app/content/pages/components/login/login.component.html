@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="w-40 mx-auto my-5 py-5 ">
+    <h6 class="modal-title text-center mb-4">Sign In</h6>
+
+    <form [formGroup]="form" class="mx-4 pb-5" (ngSubmit)="onSubmit()">
+      <app-input
+        placeholder="Email"
+        name="email"
+        [abstractControl]="form.controls['email']"
+      ></app-input>
+
+      <app-input
+        placeholder="Password"
+        name="password"
+        [abstractControl]="form.controls['password']"
+        type="password"
+      ></app-input>
+
+      <button
+        type="submit"
+        class="btn btn-block btn-bold btn-air btn-info load-page mt-4"
+        [disabled]="!form.valid"
+      >
+        Login
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary btn-block btn-bold btn-air btn-info load-page mt-3"
+        routerLink="/register"
+      >
+        Go to Register
+      </button>
+    </form>
+  </div>
+</div>

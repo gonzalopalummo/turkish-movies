@@ -1,0 +1,53 @@
+<div class="form-group">
+  <label [for]="name" *ngIf="label"
+    >{{ label }} <span *ngIf="required" class="asterisk">*</span></label
+  >
+  <input
+    [attr.id]="name"
+    (keyup)="query.next($event.target.value)"
+    [readonly]="readonly"
+    [type]="type"
+    [formControl]="abstractControl"
+    class="form-control"
+    [placeholder]="placeholder ? placeholder : ''"
+  />
+</div>
+
+<div
+  *ngIf="
+    abstractControl &&
+    (abstractControl.touched ||
+      (abstractControl.dirty &&
+        (abstractControl.hasError('required') ||
+          abstractControl.hasError('minlength') ||
+          abstractControl.hasError('maxlength'))))
+  "
+  class="validation-message"
+>
+  <p *ngIf="abstractControl.hasError('required')">
+    <i class="ion-md-warning"></i>
+    {{ label ? label : placeholder }} is required
+  </p>
+  <p *ngIf="abstractControl.hasError('minlength')">
+    <i class="ion-md-warning"></i>
+    {{ label ? label : placeholder }} need more characters
+  </p>
+  <p *ngIf="abstractControl.hasError('maxlength')">
+    <i class="ion-md-warning"></i>
+    {{ label ? label : placeholder }} need less characters
+  </p>
+</div>
+<div
+  *ngIf="
+    abstractControl &&
+    abstractControl.touched &&
+    abstractControl.invalid &&
+    !abstractControl.hasError('required')
+  "
+  class="validation-message"
+>
+  <p>
+    <i class="ion-md-warning"></i>
+    {{ label ? label : placeholder }} is invalid
+  </p>
+</div>

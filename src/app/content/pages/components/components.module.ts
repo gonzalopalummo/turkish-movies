@@ -1,23 +1,26 @@
-import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
-import { RouterModule, Routes } from '@angular/router'
-import { FormsModule } from '@angular/forms'
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar'
-import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar'
-import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar'
-import { ChartsModule } from 'ng2-charts'
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
+import { ChartsModule } from 'ng2-charts';
 
-import { ComponentsComponent } from './components.component'
-import { HomeComponent } from './home/home.component'
-import { PartialsModule } from '../../partials/partials.module'
-import { CoreModule } from '../../../core/core.module'
-import { LayoutModule } from '../../layout/layout.module'
-import { UserProfileComponent } from './user/user-profile/user-profile.component'
-import { ArtistsComponent } from './artists/artists.component'
-import { ArtistDetailsComponent } from './artists/artist-details/artist-details.component'
-import { SlickCarouselModule } from 'ngx-slick-carousel'
-import { SettingsComponent } from './user/settings/settings.component'
+import { ComponentsComponent } from './components.component';
+import { HomeComponent } from './home/home.component';
+import { PartialsModule } from '../../partials/partials.module';
+import { CoreModule } from '../../../core/core.module';
+import { LayoutModule } from '../../layout/layout.module';
+import { UserProfileComponent } from './user/user-profile/user-profile.component';
+import { ArtistsComponent } from './artists/artists.component';
+import { ArtistDetailsComponent } from './artists/artist-details/artist-details.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SettingsComponent } from './user/settings/settings.component';
+import { LoginComponent } from './login/login.component';
+import { InputModule } from '../../layout/input/input.module';
+import { RegisterComponent } from './register/register.component';
 /*
 import { GenresComponent } from './genres/genres.component'
 import { MusicComponent } from './music/music.component'
@@ -42,16 +45,24 @@ import { ReferralsComponent } from './analytics/referrals/referrals.component'
 */
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
-}
+};
 
 const routes: Routes = [
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
+    path: 'register',
+    component: RegisterComponent,
+  },
   {
     path: '',
     component: ComponentsComponent,
     children: [
       {
         path: '',
-        component: HomeComponent,
+        redirectTo: 'home',
       },
       {
         path: 'home',
@@ -69,13 +80,9 @@ const routes: Routes = [
         path: 'profile',
         component: UserProfileComponent,
       },
-      {
-        path: 'settings',
-        component: SettingsComponent,
-      },
     ],
   },
-]
+];
 
 @NgModule({
   declarations: [
@@ -85,6 +92,8 @@ const routes: Routes = [
     ArtistDetailsComponent,
     UserProfileComponent,
     SettingsComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     CommonModule,
@@ -96,6 +105,8 @@ const routes: Routes = [
     ChartsModule,
     RouterModule.forChild(routes),
     SlickCarouselModule,
+    InputModule,
+    ReactiveFormsModule,
   ],
   providers: [
     {

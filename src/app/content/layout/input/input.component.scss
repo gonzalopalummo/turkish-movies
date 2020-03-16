@@ -1,0 +1,65 @@
+@import '../../../../assets/scss/base/config';
+
+:host,
+label,
+input:not(.radio),
+.label {
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent !important;
+  color: $gray-700;
+}
+/*
+label {
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black; // grey
+}
+*/
+.validation-message {
+  font-size: 0.7rem;
+  color: $gray-500;
+  margin-top: 1rem;
+  margin-bottom: 1.4rem;
+
+  i {
+    color: $red;
+    margin-right: 0.4rem;
+  }
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid $red;
+}
+
+.asterisk {
+  color: $red;
+}
+
+input:read-only {
+  padding-left: 0;
+  background: $white;
+
+  input:focus {
+    outline: none;
+  }
+
+  /*:host input[type='checkbox'] {
+    margin-right: 8px;
+    height: 18px;
+    width: 18px !important;
+    vertical-align: middle;
+    float: left;
+  }
+
+  :host input[type='checkbox'] + label {
+    display: unset !important;
+  }*/
+}

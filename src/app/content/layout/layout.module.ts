@@ -23,58 +23,52 @@ import { PartialsModule } from '../partials/partials.module';
 import { ProfileComponent } from './header/profile/profile.component';
 import { LanguageComponent } from './header/language/language.component';
 import { SearchComponent } from './header/search/search.component';
-import { LoginComponent } from './header/login/login.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
-    suppressScrollX: true
+  suppressScrollX: true,
 };
 
 @NgModule({
-    declarations: [
-        AsideLeftComponent,
-        AsideLeftHeaderComponent,
-        AsideRightComponent,
-        MenuSectionComponent,
-        HeaderComponent,
-        FooterComponent,
-        PlayerComponent,
-        SectionComponent,
-        ProfileComponent,
-        LanguageComponent,
-        SearchComponent,
-        LoginComponent
-    ],
-    exports: [
-        AsideLeftComponent,
-        AsideLeftHeaderComponent,
-        AsideRightComponent,
-        MenuSectionComponent,
-        HeaderComponent,
-        FooterComponent,
-        PlayerComponent,
-        SectionComponent,
-        ProfileComponent,
-        SearchComponent,
-        LoginComponent
-    ],
-    imports: [
-        CommonModule,
-        PerfectScrollbarModule,
-        SlickCarouselModule,
-        PartialsModule,
-        RouterModule,
-        ReactiveFormsModule,
-        SimpleModalModule.forRoot({container: document.body})
-    ],
-    entryComponents: [
-        LanguageComponent,
-        LoginComponent
-    ],
-    providers: [
-        {
-            provide: PERFECT_SCROLLBAR_CONFIG,
-            useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
-        }/*,
+  declarations: [
+    AsideLeftComponent,
+    AsideLeftHeaderComponent,
+    AsideRightComponent,
+    MenuSectionComponent,
+    HeaderComponent,
+    FooterComponent,
+    PlayerComponent,
+    SectionComponent,
+    ProfileComponent,
+    LanguageComponent,
+    SearchComponent,
+  ],
+  exports: [
+    AsideLeftComponent,
+    AsideLeftHeaderComponent,
+    AsideRightComponent,
+    MenuSectionComponent,
+    HeaderComponent,
+    FooterComponent,
+    PlayerComponent,
+    SectionComponent,
+    ProfileComponent,
+    SearchComponent,
+  ],
+  imports: [
+    CommonModule,
+    PerfectScrollbarModule,
+    SlickCarouselModule,
+    PartialsModule,
+    RouterModule,
+    ReactiveFormsModule,
+    SimpleModalModule.forRoot({ container: document.body }),
+  ],
+  entryComponents: [LanguageComponent],
+  providers: [
+    {
+      provide: PERFECT_SCROLLBAR_CONFIG,
+      useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG,
+    } /*,
         {
             provide: DefaultSimpleModalOptionConfig,
             useValue: {...defaultSimpleModalOptions, ...{
@@ -84,7 +78,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
                 closeOnClickOutside: true,
                 animationDuration: 1000,
             }}
-        }*/
-    ]
+        }*/,
+  ],
 })
-export class LayoutModule { }
+export class LayoutModule {}
