@@ -1,0 +1,80 @@
+/*--------------------------------
+Banner Styles
+--------------------------------*/
+
+.banner {
+    height: 768px;
+    position: relative;
+    background-image: url(../images/banner/banner_1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-slider {
+    position: relative;
+    overflow: hidden;
+    .owl-item {
+        height: 768px;
+    }
+    .owl-prev,
+    .owl-next {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        text-indent: -9999px;
+    }
+    .owl-prev {
+        left: -570px;
+        cursor: url(../images/template/left-arrow.png), auto !important;
+    }
+    .owl-next {
+        right: -570px;
+        cursor: url(../images/template/right-arrow.png), auto !important;
+    }
+}
+
+.banner-content {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    h1 {
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        line-height: 1.3;
+    }
+    h3 {
+        font-size: 1.8rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        font-family: $baseFontFamily;
+        font-weight: 500;
+    }
+    .btn {
+        margin-top: 50px;
+    }
+}
+
+.countdown-time {
+    margin-bottom: 50px;
+    .section_count {
+        display: inline-block;
+        line-height: 1.3;
+        +.section_count {
+            margin-left: 50px;
+        }
+    }
+    .tcount {
+        font-size: 4.5rem;
+        font-family: $headingFontFamily;
+        display: block;
+    }
+    .text {
+        font-weight: 500;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+}

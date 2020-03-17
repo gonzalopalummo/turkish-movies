@@ -1,0 +1,364 @@
+@media (max-width: 1199px) {
+  .navbar-default .navbar-nav > li > a {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .fact-title {
+    font-size: 2rem;
+  }
+  .movie-about {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    background-color: #ffffff;
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar-default .navbar-nav > li > a:after {
+    left: 15px;
+    bottom: 5px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
+  .navbar-default .navbar-nav {
+    margin-top: 7.5px;
+    margin-bottom: 7px;
+  }
+  .navbar-right {
+    margin: 7.5px -15px;
+  }
+  .banner,
+  .banner-slider .owl-item {
+    height: 560px;
+  }
+  .banner-content {
+    text-align: right;
+  }
+  .movie-about {
+    margin-top: 0;
+  }
+  .crew {
+    float: left;
+    width: 50%;
+    + .crew {
+      float: right;
+      margin-top: 0;
+    }
+  }
+  .cast {
+    float: left;
+    width: 50%;
+    + .cast {
+      float: right;
+      margin-top: 0;
+    }
+  }
+  .show-date {
+    width: 140px;
+  }
+  .sm-bottom-40 {
+    margin-bottom: 40px;
+  }
+  .subscription-area,
+  .social-section {
+    padding: 50px;
+  }
+  .sponsor-section {
+    overflow: hidden;
+  }
+  footer {
+    padding: 50px 0;
+  }
+  .countdown-time {
+    color: #111111;
+    .dark & {
+      color: #ffffff;
+    }
+  }
+  .celebrity-single .content-wrap .celebrity-thumb {
+    width: 240px;
+    + .celebrity-details {
+      width: calc(100% - 270px);
+      margin-left: 30px;
+    }
+  }
+  .post-single {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    margin-right: -15px;
+  }
+  .about-img {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+  .movie-about {
+    max-width: 380px;
+    margin: 60px auto 0;
+  }
+  .trailer {
+    max-width: 480px;
+    margin: 10px auto;
+    float: none;
+  }
+  .section-padding {
+    padding: 55px 0;
+  }
+  .show-table {
+    tr {
+      display: block;
+      padding: 25px 0;
+      &:hover {
+        .show-date {
+          padding-left: 25px;
+        }
+      }
+    }
+    td {
+      display: block;
+      padding: 10px 25px;
+    }
+    .show-date,
+    .show-ticket {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  .news {
+    max-width: 370px;
+    float: none;
+    margin: 0 auto 30px;
+  }
+  .xs-bottom-30 {
+    margin-bottom: 30px;
+  }
+  .cta {
+    text-align: center;
+    .col-sm-6:nth-child(2) {
+      text-align: center;
+    }
+  }
+  .speech-video {
+    margin-bottom: -100px;
+  }
+  .fact-section {
+    margin-top: 60px;
+  }
+  .celebrity-single .content-wrap .celebrity-thumb {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    + .celebrity-details {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  h1,
+  .h1 {
+    font-size: 3.6rem;
+  }
+  h2,
+  .h2 {
+    font-size: 3rem;
+  }
+  h3,
+  .h3 {
+    font-size: 2.4rem;
+  }
+  h4,
+  .h4 {
+    font-size: 2rem;
+  }
+  h5,
+  .h5 {
+    font-size: 1.6rem;
+  }
+  h6,
+  .h6 {
+    font-size: 1.2rem;
+  }
+  .navbar-default {
+    min-height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+    .navbar-brand {
+      height: 40px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      img {
+        max-height: 40px;
+      }
+    }
+    .navbar-toggle {
+      margin-top: 13px;
+      margin-bottom: 13px;
+    }
+    .navbar-nav {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .banner-content {
+    text-align: center;
+    bottom: 50%;
+    transform: translateY(30%);
+    h1 {
+      font-size: 3.6rem;
+    }
+    .btn {
+      margin-top: 15px;
+    }
+  }
+  .crews,
+  .casts {
+    > .col-md-4:nth-child(2) {
+      margin-top: 0;
+    }
+    > .col-md-4:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+  .crew,
+  .cast {
+    width: 100%;
+    display: block;
+    float: none;
+    margin-bottom: 30px;
+  }
+  .crew {
+    + .crew {
+      float: none;
+    }
+  }
+  .cast {
+    + .cast {
+      float: none;
+    }
+  }
+  .google-map {
+    height: 320px;
+  }
+  .subscription-area,
+  .social-section {
+    padding: 30px;
+  }
+  .social-section .social {
+    a {
+      font-size: 2.4rem;
+      + a {
+        margin-left: 20px;
+      }
+    }
+  }
+  .social-title {
+    font-size: 2.8rem;
+  }
+  .cta-title {
+    font-size: 2.8rem;
+  }
+  .countdown-time {
+    margin-bottom: 30px;
+    .section_count {
+      + .section_count {
+        margin-left: 18px;
+      }
+    }
+    .tcount {
+      font-size: 3.6rem;
+    }
+  }
+  .page-header {
+    padding: 100px 0 35px;
+  }
+  .col-xs-6 {
+    width: 100%;
+  }
+  .sidebar {
+    margin-top: 40px;
+  }
+  .given-comment .comment-wrap {
+    margin-bottom: 30px;
+  }
+  .given-comment .comment-body {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .small-home footer {
+    background-color: #111111;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .small-home .footer-text-2 {
+    text-align: center;
+  }
+  .small-home .banner-content {
+    transform: translateY(50%);
+  }
+}
+
+@media (max-width: 519px) {
+  .sponsors {
+    margin-right: 0;
+  }
+  .sponsor {
+    display: block;
+    margin: 0 0 52px;
+  }
+  .countdown-time {
+    .tcount {
+      font-size: 3rem;
+    }
+  }
+  .filmography-table {
+    .film-poster {
+      width: 0;
+      padding: 0;
+      .film-thumb {
+        display: none;
+      }
+    }
+  }
+  .small-home header .socials a {
+    margin: 0 6px;
+  }
+}

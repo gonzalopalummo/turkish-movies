@@ -1,0 +1,113 @@
+/*--------------------------------
+Header Styles
+--------------------------------*/
+
+.navbar-default {
+    min-height: 110px;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 990;
+    transition: all 0.3s ease;
+    &.affix {
+        background-color: #ffffff;
+        min-height: 60px;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+        .navbar-brand {
+            height: 40px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            img {
+                max-height: 40px;
+            }
+        }
+        .navbar-toggle {
+            margin-top: 13px;
+            margin-bottom: 13px;
+        }
+        .navbar-nav {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+    .navbar-brand {
+        height: 53px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 28px;
+        margin-bottom: 28px;
+        transition: all 0.3s ease;
+        img {
+            max-height: 53px;
+            width: auto;
+        }
+    }
+    .navbar-toggle {
+        border-color: $primaryColor;
+        margin-top: 38px;
+        margin-bottom: 38px;
+        border-radius: 0;
+        &:focus {
+            background-color: transparent;
+        }
+        &:hover {
+            background-color: $primaryColor;
+            border-color: $primaryColor;
+            .icon-bar {
+                background-color: #ffffff;
+            }
+        }
+        .icon-bar {
+            background-color: $primaryColor;
+        }
+    }
+    .navbar-nav {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        >li {
+            >a {
+                font-size: 1.4rem;
+                color: $headingFontColor;
+                text-transform: uppercase;
+                padding-left: 28px;
+                padding-right: 28px;
+                position: relative;
+                &:hover {
+                    color: $headingFontColor;
+                    &:after {
+                        width: 20px;
+                    }
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 28px;
+                    bottom: 10px;
+                    height: 2px;
+                    width: 0;
+                    background-color: $primaryColor;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+        .active {
+            >a {
+                background-color: transparent;
+                color: $headingFontColor;
+                &:hover,
+                &:focus {
+                    background-color: transparent;
+                    color: $headingFontColor;
+                }
+                &:after {
+                    width: 20px;
+                }
+            }
+        }
+    }
+}

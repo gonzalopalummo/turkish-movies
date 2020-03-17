@@ -1,0 +1,38 @@
+/*--------------------------------
+News Styles
+--------------------------------*/
+.news-items{
+    float: left;
+    width: 100%;
+    margin-bottom: -30px;
+}
+.news{
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.news-thumb{
+    display: block;
+}
+.news-title{
+    font-size: 2.2rem;
+    margin-top: 25px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: $headingFontColor;
+    a{
+        color: inherit;
+        &:hover{
+            color: $primaryColor;
+        }
+    }
+}
+.news-metas{
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.news-meta{
+    + .news-meta{
+        margin-left: 40px;
+    }
+}

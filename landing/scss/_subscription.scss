@@ -1,0 +1,43 @@
+/*--------------------------------
+Subscription Styles
+--------------------------------*/
+
+.twitter-subscription-area {
+    background-image: url(../images/junk/bg1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.subscription-area {
+    padding: 120px 60px;
+    color: #ffffff;
+}
+
+.subscription-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    margin-bottom: 10px;
+}
+
+.subsciption-subtext {
+    color: #ffffff;
+}
+
+.newsletter-success {
+    margin-bottom: 0;
+    margin-top: 15px;
+    background-color: #16a085;
+    color: #ffffff;
+    padding: 3px 15px;
+    display: none;
+}
+
+.newsletter-error {
+    margin-bottom: 0;
+    margin-top: 15px;
+    background-color: $primaryColor;
+    color: #ffffff;
+    padding: 3px 15px;
+    display: none;
+}

@@ -1,0 +1,159 @@
+/*------------------------------------------------------
+Actor Page Styles
+------------------------------------------------------*/
+
+.celebrity-single {
+    float: left;
+    width: 100%;
+    .content-wrap {
+        float: left;
+        width: 100%;
+        .celebrity-thumb {
+            width: 300px;
+            float: left;
+            +.celebrity-details {
+                margin-left: 70px;
+                width: calc(100% - 370px);
+            }
+        }
+        .celebrity-details {
+            float: left;
+            .celebrity-name {
+                font-size: 4.2rem;
+                margin: 0;
+                a {
+                    color: inherit;
+                    &:hover {
+                        color: $primaryColor;
+                    }
+                }
+            }
+            .celebrity-profession {
+                font-size: 1.8rem;
+                margin-top: 5px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.celebrity-infos {
+    margin-top: 25px;
+    p {
+        margin: 0;
+        label {
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+    }
+    .actor-social {
+        display: inline-block;
+        a {
+            margin: 0 5px;
+            color: $headingFontColor;
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+.filmography-table {
+    width: 100%;
+    tr {
+        border-bottom: 1px solid #e6e6e6;
+        &.head-tr {
+            font-size: 1.8rem;
+            color: #111111;
+            line-height: 100%;
+            font-weight: 400;
+            th {
+                font-weight: inherit;
+            }
+        }
+    }
+    th,
+    td {
+        padding-bottom: 20px;
+        &:last-child {
+            text-align: right;
+        }
+    }
+    td {
+        padding-top: 20px;
+    }
+    .film-poster {
+        width: 125px;
+        padding-right: 25px;
+    }
+    .film-details {
+        .film-title {
+            font-size: 1.8rem;
+            color: #111111;
+            margin: 0;
+            a {
+                color: inherit;
+                &:hover {
+                    color: $primaryColor;
+                }
+            }
+            .film-category {
+                margin-bottom: 0;
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+.single-section {
+    +.single-section {
+        margin-top: 50px;
+    }
+}
+
+.award {
+    +.award {
+        margin-top: 20px;
+    }
+    .award-on {
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 100%;
+    }
+}
+
+.single-gallery-slider {
+    .owl-prev,
+    .owl-next {
+        position: absolute;
+        font-size: 2.5rem;
+        color: #ffffff;
+        background-color: rgba($headingFontColor, 0.55);
+        width: 30px;
+        height: 50px;
+        line-height: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+    .owl-prev {
+        left: 0;
+    }
+    .owl-next {
+        right: 0;
+    }
+}
+
+.filmography-table {
+    th {
+        font-weight: 700;
+        font-family: $headingFontFamily;
+        color: $headingFontColor;
+        font-size: 2.2rem;
+    }
+    .film-title {
+        font-family: $baseFontFamily;
+        font-weight: 600;
+    }
+}

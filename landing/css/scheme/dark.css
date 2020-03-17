@@ -1,0 +1,100 @@
+/*--------------------------------
+Dark Styles
+--------------------------------*/
+body,
+.section-title,
+.fact-title {
+  background-color: #2b2929;
+  color: #ffffff;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+.crew-name,
+.cast-name,
+.btn,
+.news-title,
+.show-hall .hall-address,
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #ffffff;
+}
+
+.navbar-default.affix {
+  background-color: #111111;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #111111;
+  }
+
+  .countdown-time {
+    color: #ffffff;
+  }
+}
+@media (max-width: 639px) {
+  .navbar-default {
+    background-color: #111111;
+  }
+}
+.btn {
+  border-color: #ea5455;
+}
+
+.section-icon,
+.fact-icon {
+  color: rgba(251, 0, 0, 0.15);
+}
+
+tr:hover .show-date .day,
+tr:hover .show-times,
+tr:hover .hall-address {
+  color: #001111;
+}
+
+.contact-way .contact-icon,
+.post-meta .fa {
+  color: #ea5455;
+}
+
+.page-numbers {
+  border-color: rgba(255, 255, 255, 0.11);
+  color: #ffffff;
+}
+
+.widget ul li a {
+  color: #ffffff;
+}
+
+.widget-tags .tag {
+  color: #ffffff;
+}
+
+.sharing {
+  background-color: rgba(251, 0, 0, 0.22);
+}
+.sharing a {
+  color: #ffffff;
+}
+
+.given-comment .comment-reply {
+  color: #ffffff;
+}
+
+.page-header {
+  background-image: url(../../images/banner/page-header-dark.jpg);
+}

@@ -1,0 +1,59 @@
+/*--------------------------------
+Button Styles
+--------------------------------*/
+
+.btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $headingFontColor;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 21px;
+    border: 1px solid #d7d7d7;
+    padding: 0 29px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    &:focus,
+    &:visited,
+    &:active,
+    &:active:focus {
+        outline: none;
+    }
+    &:hover {
+        background-color: $primaryColor;
+        color: #ffffff;
+        border-color: $primaryColor;
+    }
+    .text-white & {
+        color: #ffffff;
+        border-color: $primaryColor;
+    }
+    &.btn-simple {
+        font-size: 1.8rem;
+        padding: 0;
+        &.play-video {
+            border: none;
+            width: auto;
+            &:hover {
+                background-color: transparent;
+                .fa {
+                    background-color: #ffffff;
+                    color: $primaryColor;
+                }
+            }
+            .fa {
+                font-size: 1.4rem;
+                line-height: 40px;
+                height: 40px;
+                width: 40px;
+                border: 1px solid #ffffff;
+                border-radius: 50px;
+                margin-right: 10px;
+                transition: all 0.3s ease;
+                &:before {
+                    margin-left: 3px;
+                }
+            }
+        }
+    }
+}

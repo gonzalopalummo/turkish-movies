@@ -1,0 +1,100 @@
+/*--------------------------------
+Small Homes Styles
+--------------------------------*/
+
+.small-home {
+    header {
+        height: 110px;
+        position: fixed;
+        z-index: 990;
+        top: 0;
+        left: 0;
+        right: 0;
+        &.affix {
+            background-color: transparent;
+            min-height: 60px;
+            box-shadow: none;
+        }
+        .socials {
+            margin-top: 45px;
+            margin-bottom: 45px;
+            text-align: right;
+            height: 20px;
+            line-height: 20px;
+            a {
+                color: $headingFontColor;
+                height: 20px;
+                line-height: 20px;
+                background-color: transparent;
+                font-size: 1.4rem;
+                margin: 0 10px;
+                width: auto;
+                &:hover {
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+    .banner {
+        min-height: 480px;
+    }
+    .navbar-brand {
+        height: 53px;
+        margin-top: 28px;
+        margin-bottom: 28px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .main-wrap {
+        position: relative;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: transparent;
+        z-index: 980;
+        padding: 20px 0 45px;
+        color: #ffffff;
+        text-align: left;
+    }
+    .footer-text {
+        color: #ffffff;
+        a {
+            color: inherit;
+        }
+    }
+    .footer-text-2 {
+        text-align: right;
+    }
+}
+
+.banner-2 {
+    background-image: url(../images/banner/banner_2.jpg);
+}
+
+.banner-3 {
+    background-image: url(../images/banner/banner_3.jpg);
+}
+
+.banner-4 {
+    background-image: url(../images/banner/banner_4.jpg);
+}
+
+.banner-5 {
+    background-image: url(../images/banner/banner_5.jpg);
+}
+
+.small-home-2,
+.small-home-3,
+.small-home-4,
+.small-home-5 {
+    header {
+        .socials {
+            a {
+                color: #ffffff;
+            }
+        }
+    }
+}

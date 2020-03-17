@@ -1,0 +1,45 @@
+/*--------------------------------
+Pages Styles
+--------------------------------*/
+
+.page-header {
+    background-image: url(../images/banner/page-header.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    padding: 195px 0 100px;
+}
+
+.page-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.breadcrumb {
+    padding: 0;
+    margin: 5px 0 0;
+    background-color: transparent;
+    border-radius: 0;
+    color: #ffffff;
+    >li {
+        color: #ffffff;
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        +li {
+            &:before {
+                color: #ffffff;
+            }
+        }
+        a {
+            color: inherit;
+        }
+    }
+    >.active {
+        color: #ffffff;
+    }
+}

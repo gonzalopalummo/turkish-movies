@@ -1,0 +1,66 @@
+/*--------------------------------
+Crew Styles
+--------------------------------*/
+.casts{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    >.col-md-4:nth-child(2){
+        margin-top: 120px;
+    }
+    >.col-md-4:nth-child(3){
+        margin-top: 50px;
+    }
+}
+.cast{
+    width: 100%;
+    max-width: 278px;
+    margin: 0 auto;
+    text-align: center;
+    + .cast{
+        margin-top: 52px;
+    }
+}
+.cast-avatar{
+    box-shadow: -11px 13px 27px 0px rgba(0, 0, 0, 0.18);
+    position: relative;
+    &:before{
+        background-image: url(../images/crew/before.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 169px;
+        width: 169px;
+        position: absolute;
+        content: "";
+        z-index: -1;
+        bottom: -46px;
+        left: -54px;
+    }
+    &:after{
+        background-image: url(../images/crew/after.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: absolute;
+        content: "";
+        z-index: -1;
+        width: 246px;
+        height: 152px;
+        right: -79px;
+        top: 20px;
+    }
+}
+.cast-name{
+    font-size: 2.2rem;
+    color: $headingFontColor;
+    text-transform: uppercase;
+    margin-top: 27px;
+    margin-bottom: 6px;
+    a{
+        color: inherit;
+        &:hover{
+            color: $primaryColor;
+        }
+    }
+}

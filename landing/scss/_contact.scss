@@ -1,0 +1,100 @@
+/*--------------------------------
+Contact Styles
+--------------------------------*/
+
+.map-social-area {
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../images/junk/bg1.jpg);
+}
+
+.contact-ways {
+  float: left;
+  width: 100%;
+  margin-bottom: -25px;
+}
+
+.contact-way {
+  float: left;
+  width: 100%;
+  margin-bottom: 25px;
+  .contact-icon {
+    float: left;
+    width: 14px;
+    margin-right: 10px;
+  }
+  .contact-info {
+    float: left;
+    width: calc(100% - 24px);
+  }
+}
+
+.google-map {
+  height: 450px;
+}
+
+.social-section {
+  float: left;
+  width: 100%;
+  padding: 50px;
+  .social {
+    a {
+      display: inline-block;
+      font-size: 3.4rem;
+      color: #ffffff;
+      + a {
+        margin-left: 30px;
+      }
+      i {
+        transition: all 0.3s ease;
+      }
+      &:hover {
+        .fa-facebook {
+          color: #3b5999;
+        }
+        .fa-twitter {
+          color: #55acee;
+        }
+        .fa-google-plus {
+          color: #dd4b39;
+        }
+        .fa-youtube-play {
+          color: #cd201f;
+        }
+        .fa-instagram {
+          color: #e4405f;
+        }
+      }
+    }
+  }
+}
+
+.social-title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.social-subtext {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.input-success {
+  margin-bottom: 0;
+  margin-top: 15px;
+  background-color: #16a085;
+  color: #ffffff;
+  padding: 3px 15px;
+  display: none;
+}
+
+.input-error {
+  margin-bottom: 0;
+  margin-top: 15px;
+  background-color: $primaryColor;
+  color: #ffffff;
+  padding: 3px 15px;
+  display: none;
+}

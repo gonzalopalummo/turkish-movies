@@ -1,0 +1,31 @@
+/*--------------------------------
+Call to action Styles
+--------------------------------*/
+
+.cta {
+  padding: 75px 0;
+  .col-sm-6:nth-child(2) {
+    text-align: right;
+  }
+  .btn {
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: $primaryColor;
+    border-color: #ffffff;
+    &:hover {
+      color: #ffffff;
+      background-color: transparent;
+    }
+  }
+}
+
+.cta-title {
+  font-size: 3.4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.cta-text {
+  color: #ffffff;
+}

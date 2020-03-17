@@ -1,0 +1,113 @@
+/*--------------------------------
+Speech Styles
+--------------------------------*/
+
+.speech-mock {
+    display: inline-block;
+    position: relative;
+    box-shadow: -11px 13px 27px 0px rgba(0, 0, 0, 0.18);
+    &:before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/speech/before.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 59px;
+        height: 64px;
+        bottom: -24px;
+        left: -28px;
+        z-index: -1;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/speech/after.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 128px;
+        height: 79px;
+        top: 10px;
+        right: -42px;
+        z-index: -1;
+    }
+}
+
+.speech-item {
+    blockquote {
+        font-size: 1.4rem;
+        border: none;
+        padding: 0;
+        margin-top: 15px;
+    }
+    .name {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+}
+
+.speech-slider {
+    .owl-controls {
+        margin-top: 15px;
+        margin-bottom: 40px;
+        .owl-prev,
+        .owl-next {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            line-height: 30px;
+            background-color: $primaryColor;
+            color: #ffffff;
+            display: inline-block;
+            margin: 0 10px;
+        }
+    }
+}
+
+.speech-video {
+    margin-bottom: -410px;
+    input:not([type=radio]):not([type=checkbox]):not([type=submit]),
+    textarea {
+        border: none;
+    }
+}
+
+.plyr__play-large {
+    padding: 40px;
+    border: none;
+    background-color: $headingFontColor;
+    &:focus {
+        outline: none;
+    }
+    svg {
+        fill: #ffffff;
+    }
+}
+
+.plyr__progress--played,
+.plyr__volume--display {
+    background-color: rgba(#ffffff, 0.15);
+    &:focus {
+        outline: none;
+    }
+}
+
+.plyr--video .plyr__progress--buffer,
+.plyr--video .plyr__volume--display {
+    background-color: rgba(#ffffff, 0.22);
+}
+
+.plyr--video .plyr__controls button.tab-focus:focus,
+.plyr--video .plyr__controls button:hover {
+    background-color: #111111;
+}
+
+.plyr__progress--played,
+.plyr__volume--display {
+    color: $primaryColor;
+}
+
+.plyr input[type=range]::-webkit-slider-thumb {
+    margin-top: 6px;
+}

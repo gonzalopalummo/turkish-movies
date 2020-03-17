@@ -1,18 +1,17 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-section",
-  templateUrl: "./section.component.html"
+  selector: 'app-section',
+  templateUrl: './section.component.html',
 })
 export class SectionComponent implements OnInit {
-  classes = "carousel";
+  classes = 'carousel';
 
   @Input() section: any = {};
   @Input() imageCard = false;
   @Input() primaryCard = false;
   @Input() secondaryCard = false;
-  @Input() showImageOptions = false;
-  @Input() imageBorderRadiusClass = "card-img--radius-sm";
+  @Input() imageBorderRadiusClass = 'card-img--radius-sm';
   @Input() carouselButtonPositionClass;
   @Input() fourSlideCarousel = false;
   @Input() artistRouteLink = false;
@@ -42,32 +41,32 @@ export class SectionComponent implements OnInit {
         {
           breakpoint: 1440,
           settings: {
-            slidesToShow: this.fourSlideCarousel ? 4 : 5
-          }
+            slidesToShow: this.fourSlideCarousel ? 4 : 5,
+          },
         },
         {
           breakpoint: 1200,
           settings: {
-            slidesToShow: this.fourSlideCarousel ? 2 : 3
-          }
+            slidesToShow: this.fourSlideCarousel ? 2 : 3,
+          },
         },
         {
           breakpoint: 640,
           settings: {
-            slidesToShow: 2
-          }
+            slidesToShow: 2,
+          },
         },
         {
           breakpoint: 380,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false
-          }
-        }
-      ]
+            arrows: false,
+          },
+        },
+      ],
     };
 
-    this.classes = this.classes + " " + this.carouselButtonPositionClass;
+    this.classes = this.classes + ' ' + this.carouselButtonPositionClass;
   }
 }

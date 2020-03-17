@@ -1,0 +1,235 @@
+/*--------------------------------
+Blog Page Styles
+--------------------------------*/
+
+.post {
+    margin-bottom: 60px;
+}
+
+.post-thumb {
+    display: block;
+}
+
+.post-content {
+    margin-top: 10px;
+}
+
+.post-title {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    a {
+        color: inherit;
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+}
+
+.post-metas {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    .post-meta {
+        +.post-meta {
+            margin-left: 40px;
+        }
+    }
+}
+
+.post-excerpt {
+    margin-bottom: 25px;
+}
+
+.btn-readmore {
+    background-color: $primaryColor;
+    color: #ffffff;
+    text-transform: none;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    &:focus,
+    &:visited {
+        color: #ffffff;
+    }
+}
+
+.pagination {
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+.page-numbers {
+    height: 45px;
+    width: 45px;
+    line-height: 43px;
+    border: 1px solid rgba($primaryColor, 0.22);
+    border-radius: 50%;
+    display: inline-block;
+    color: $headingFontColor;
+    margin: 0 4px;
+    &:focus,
+    &:visited {
+        color: $headingFontColor;
+    }
+    &:hover {
+        color: $primaryColor;
+    }
+    &.current {
+        background-color: $primaryColor;
+        color: #ffffff;
+    }
+}
+
+
+/*** Widgets Styles ***/
+
+.sidebar {
+    float: left;
+    width: 100%;
+}
+
+.widget {
+    float: left;
+    width: 100%;
+    +.widget {
+        margin-top: 50px;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            a {
+                color: $headingFontColor;
+                &:hover {
+                    color: $primaryColor;
+                }
+                &:before {
+                    content: "\f105";
+                    font-family: "FontAwesome";
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+    .recent-posts {
+        float: left;
+        width: 100%;
+    }
+    .recent-post {
+        float: left;
+        width: 100%;
+        +.recent-post {
+            margin-top: 30px;
+        }
+    }
+    .post-thumb {
+        width: 100px;
+        margin-right: 40px;
+        float: left;
+        display: inline-block;
+        +.post-content {
+            width: calc(100% - 140px);
+        }
+    }
+    .post-content {
+        float: left;
+    }
+    .post-title {
+        font-size: 1.8rem;
+        text-transform: none;
+        color: $primaryColor;
+        margin-bottom: 8px;
+    }
+    .post-genre {
+        margin-bottom: 0;
+    }
+}
+
+.widget-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.sidebar-search,
+.widget-subscription {
+    position: relative;
+    [type=search],
+    [type=email] {
+        width: 100%;
+        border: 1px solid $primaryColor !important;
+        border-radius: 25px;
+        height: 50px;
+        line-height: 48px;
+        padding: 0 60px 0 30px;
+        margin: 0 !important;
+    }
+    [type=submit] {
+        border: 1px solid transparent;
+        background-color: transparent;
+        line-height: 48px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        width: 70px;
+        text-align: center;
+    }
+}
+
+.widget-tags {
+    .tag {
+        color: $headingFontColor;
+        &:hover {
+            color: $primaryColor;
+        }
+    }
+}
+
+.socials {
+    a {
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        line-height: 52px;
+        text-align: center;
+        background-color: #333333;
+        color: #ffffff;
+        font-size: 1.8rem;
+        &.facebook-link {
+            background-color: #3b5999;
+        }
+        &.twitter-link {
+            background-color: #55acee;
+        }
+        &.youtube-link {
+            background-color: #cd201f;
+        }
+        &.instagram-link {
+            background-color: #e4405f;
+        }
+        &.pinterest-link {
+            background-color: #bd081c;
+        }
+        &.linkedin-link {
+            background-color: #0077B5;
+        }
+    }
+}
+
+.instagram-photos {
+    float: left;
+    width: calc(100% + 5px);
+    margin-right: -5px;
+    a {
+        display: inline-block;
+        float: left;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        max-width: 85px;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
