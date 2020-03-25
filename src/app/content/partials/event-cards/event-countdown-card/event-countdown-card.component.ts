@@ -1,12 +1,12 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-event-countdown-card",
-  templateUrl: "./event-countdown-card.component.html"
+  selector: 'app-event-countdown-card',
+  templateUrl: './event-countdown-card.component.html',
 })
 export class EventCountdownCardComponent implements OnInit {
-  @Input() musicEvent: any = {};
-  @Input() eventBorderRadiusClass = " ";
+  @Input() event: any = {};
+  @Input() eventBorderRadiusClass = ' ';
 
   countText: any = {};
 
@@ -14,17 +14,6 @@ export class EventCountdownCardComponent implements OnInit {
 
   ngOnInit() {
     this.eventBorderRadiusClass =
-      this.eventBorderRadiusClass + " h-100 event event-v bg-img bg-contain";
-
-    this.countText = {
-      Year: "",
-      Month: "",
-      Weeks: "",
-      Days: "",
-      Hours: "",
-      Minutes: "",
-      Seconds: "",
-      MilliSeconds: ""
-    };
+      this.eventBorderRadiusClass + ' h-100 event event-v bg-img bg-contain';
   }
 }

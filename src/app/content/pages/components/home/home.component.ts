@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   radio: any = {};
   genres: any = {};
 
-  events: any = {};
+  songs: any = {};
   secondaryEvents: any = [];
   sliderConfig: any = {};
   classes: string;
@@ -105,7 +105,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.topCharts = {
       title: 'Catalog',
       subTitle: '',
-      page: '/songs',
       items: this.songsConfigService.songsList,
     };
   }
@@ -115,13 +114,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.newRelease = {
       title: 'New Releases',
       subTitle: '',
-      page: '/songs',
       items: this.songsConfigService.songsList,
     };
   }
 
   // Initialize music events object for section
   initEvents() {
-    this.events = this.eventsConfigService.eventsList;
+    this.songs = this.songsConfigService.songsList;
   }
 }

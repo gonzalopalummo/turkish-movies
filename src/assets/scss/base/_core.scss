@@ -41,7 +41,7 @@ img {
   border-bottom: 1px solid $gray-300;
 
   &:after {
-    content: "OR";
+    content: 'OR';
     display: inline-block;
     @include absolute(bottom -0.875rem left 50%);
     padding: 0.25rem 0.5rem;
@@ -79,12 +79,6 @@ img {
       rgba($white, 1) 78%,
       rgba($white, 1) 100%
     );
-  }
-}
-
-@for $i from 1 through length($banner-bg-list) {
-  .bg-#{nth($banner-bg-list, $i)} {
-    background-image: url("#{$banner-bg-image-url}#{nth($banner-bg-list, $i)}.jpg");
   }
 }
 

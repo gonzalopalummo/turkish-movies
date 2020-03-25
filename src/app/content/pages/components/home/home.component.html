@@ -1,9 +1,9 @@
-<!-- Page Banner [[ Find at scss/base/core.scss ]] -->
-<div class="banner bg-home"></div>
+<div
+  class="banner bg-home"
+  [style.background-image]="'url(./assets/images/banner/home.jpg)'"
+></div>
 
-<!-- Begin | Main Container [[ Find at scss/base/core.scss ]] -->
 <div class="main-container">
-  <!-- Top Charts -->
   <app-section
     *ngIf="topCharts"
     [section]="topCharts"
@@ -14,9 +14,8 @@
 
   <h4 class="mb-4">New Chapters</h4>
   <ngx-slick-carousel class="{{ classes }} section" [config]="sliderConfig">
-    <div ngxSlickItem class="slide" *ngFor="let event of events">
-      <app-event-countdown-card [musicEvent]="event"></app-event-countdown-card>
+    <div ngxSlickItem class="slide" *ngFor="let song of songs">
+      <app-event-countdown-card [event]="song"></app-event-countdown-card>
     </div>
   </ngx-slick-carousel>
 </div>
-<!-- End | Main Container -->

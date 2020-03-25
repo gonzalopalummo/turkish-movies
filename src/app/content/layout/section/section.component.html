@@ -1,16 +1,5 @@
 <!-- Begin | Section [[ Find at scss/base/core.scss ]] -->
 <div class="section">
-  <div class="heading">
-    <div class="d-flex flex-wrap align-items-end">
-      <div class="flex-grow-1">
-        <h4>{{ section?.title }}</h4>
-        <p>{{ section?.subTitle }}</p>
-      </div>
-      <!--<a class="btn btn-sm btn-pill btn-air btn-primary" routerLink="{{section?.page}}">View All</a>-->
-    </div>
-    <hr />
-  </div>
-
   <ngx-slick-carousel [class]="classes" [config]="sliderConfig">
     <div ngxSlickItem *ngFor="let item of section?.items" class="slide">
       <app-image-card

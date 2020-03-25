@@ -1,18 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-event-card',
-    templateUrl: './event-card.component.html'
+  selector: 'app-event-card',
+  templateUrl: './event-card.component.html',
 })
 export class EventCardComponent implements OnInit {
+  @Input() event: any = {};
+  @Input() eventBorderRadiusClass = 'bg-img-radius-lg';
 
-    @Input() musicEvent: any = {};
-    @Input() eventBorderRadiusClass = 'bg-img-radius-lg';
+  constructor() {}
 
-    constructor() { }
-
-    ngOnInit() {
-        this.eventBorderRadiusClass = this.eventBorderRadiusClass + ' h-100 event event-h bg-img';
-    }
-
+  ngOnInit() {
+    this.eventBorderRadiusClass =
+      this.eventBorderRadiusClass + ' h-100 event event-h bg-img';
+  }
 }
