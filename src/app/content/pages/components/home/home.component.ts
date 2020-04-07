@@ -96,9 +96,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.classes = 'carousel ' + 'arrow-pos-1';
   }
 
-  ngAfterViewInit() {
-    this.loadingService.stopLoading();
-  }
+  ngAfterViewInit() {}
 
   // Initialize top charts object for section
   initTopCharts() {

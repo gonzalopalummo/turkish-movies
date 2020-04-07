@@ -1,70 +1,43 @@
 // Loader styles
 #loading {
-    @include fixed(top 0 right 0 bottom 0 left 0);
-    z-index: $zIndex-loader;
-    background-color: $white;
+  @include fixed(top 0 right 0 bottom 0 left 0);
+  z-index: $zIndex-loader;
+  background-color: $black;
 }
 
-.loader {
-    @include absolute(top 50% left 50%);
-    transform: translate(-50%, -50%);
-
-    .text {
-        display: block;
-        margin-top: .5rem;
-        font-weight: map-get($font-weight, medium);
-        text-align: center;
-    }
+.lds-ripple {
+  width: 80px;
+  height: 75px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
-
-// Loader equalizer line styles
-.eq {
-    width: 2rem;
-    height: 2rem;
-    margin-right: auto;
-    margin-left: auto;
-    border: 1px solid theme-color(dark);
-    position: relative;
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #ff2525;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
-
-.eq-bar {
-    @include absolute(bottom .25rem);
-    display: block;
-    width: 2px;
-    height: 1.325rem;
-    background-color: theme-color(dark);
-    animation-name: eq-play;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-fill-mode: both;
-
-    &.eq-bar--1 {
-        left: .25rem;
-        animation-duration: 0.6s;
-    }
-
-    &.eq-bar--2 {
-        left: .5rem;
-        animation-duration: 0.5s;
-    }
-
-    &.eq-bar--3 {
-        left: .75rem;
-        animation-duration: 0.58s;
-    }
-
-    &.eq-bar--4 {
-        left: 1rem;
-        animation-duration: 0.52s;
-    }
-
-    &.eq-bar--5 {
-        left: 1.25rem;
-        animation-duration: 0.56s;
-    }
-
-    &.eq-bar--6 {
-        left: 1.5rem;
-        animation-duration: 0.45s;
-    }
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
 }

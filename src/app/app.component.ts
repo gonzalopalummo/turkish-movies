@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
 
   constructor(private loadingService: LoadingService) {
     this.loadingService.startLoading();
-    this.loadingService.stopLoading();
+    setTimeout(() => this.loadingService.stopLoading(), 800);
   }
 
   ngOnInit() {}

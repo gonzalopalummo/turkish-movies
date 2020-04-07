@@ -9,10 +9,10 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  {
+  /*{
     path: 'landing',
     component: LandingPageComponent,
-  },
+  },*/
   {
     path: '',
     component: PagesComponent,
