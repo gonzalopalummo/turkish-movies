@@ -27,7 +27,7 @@ export class Config {
       // Brand config
       brand: {
         logo: './assets/images/logos/logo.png',
-        name: 'Turkish Movies',
+        name: 'Dream Movies',
       },
 
       // Theme skin config

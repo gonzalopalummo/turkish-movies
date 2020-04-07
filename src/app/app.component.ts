@@ -6,7 +6,7 @@ import { LoadingService } from './core/services/loading.service';
   templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit {
-  title = 'Turkish Movies';
+  title = 'Dream Movies';
 
   constructor(private loadingService: LoadingService) {
     this.loadingService.startLoading();
